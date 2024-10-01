@@ -1,0 +1,1406 @@
+{
+  "title": "Subjective Evaluation",
+  "instructions": "1. You will be provided with groups of tests, each group contains a reference image and three corresponding captions.The evaluation for the generated captions should be be scored from 1 to 10, with the following criteria:\n\n1 (Very Poor Alignment, Cosine Similarity \u2248 -1): The text is unrelated or contradicts the image, offering no instructional value.\n\n\n2-3 (Poor Alignment, Cosine Similarity \u2248 -0.5 to 0): The text provides little relevant instruction related to the image.\n\n\n4-5 (Moderate Alignment, Cosine Similarity \u2248 0 to 0.5): The text only partially matches the image and lacks details for clear instructions.\n\n\n6-7 (Good Alignment, Cosine Similarity \u2248 0.5 to 0.75): The text aligns well with the image, detailing most necessary actions with minor omissions.\n\n\n8-9 (Very Good Alignment, Cosine Similarity \u2248 0.75 to 0.9): The text and image are highly consistent, offering accurate instructions for most actions.\n\n\n10 (Excellent Alignment, Cosine Similarity \u2248 0.9 to 1): The text and image align perfectly, clearly instructing all depicted actions comprehensively.\n\n",
+  "groups": [
+    {
+      "image": "../archive/htstep/frames/H73FsQb0HQ8/frame_0000000834.jpg",
+      "sample_id": "H73FsQb0HQ8|8|frame_0000000834",
+      "captions": [
+        "Cook Vegetarian Chili",
+        "Add the beans,tomatoes and water.",
+        "Stir well."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/945BawmUuSo/frame_0000002784.jpg",
+      "sample_id": "945BawmUuSo|8|frame_0000002784",
+      "captions": [
+        "Cook Rosti",
+        "Mix the flour, salt and pepper in a mixing bowl.",
+        ";"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/sfvFLtrS3Nc/frame_0000005832.jpg",
+      "sample_id": "sfvFLtrS3Nc|0|frame_0000005832",
+      "captions": [
+        "Fillet a Rainbow Trout Fish",
+        "Cut the fish you will need a sharp fillet knife.",
+        "If you don't have one, find the sharpest knife you have."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Yh5JWFZAodA/frame_0000004013.jpg",
+      "sample_id": "Yh5JWFZAodA|4|frame_0000004013",
+      "captions": [
+        "Cook Black Eyed Peas",
+        "Discard the bay leaves and serve.",
+        "Fish out the bay leaves before pouring the beans into individual serving dishes using a ladle."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/DlaZAGlsF1Y/frame_0000001385.jpg",
+      "sample_id": "DlaZAGlsF1Y|0|frame_0000001385",
+      "captions": [
+        "Prepare Tomato Dal",
+        "Add the onions, chilis, tomatoes and coriander.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/haJFMSbBG3g/frame_0000003778.jpg",
+      "sample_id": "haJFMSbBG3g|3|frame_0000003778",
+      "captions": [
+        "Make Ceviche",
+        "Pour 1 cup of lime juice over the tilapia.",
+        "You should squeeze about 8 limes to get 1 cup of lime juice. Mix the tilapia and juice gently to combine the flavors."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/N8n4WTDpxEw/frame_0000000777.jpg",
+      "sample_id": "N8n4WTDpxEw|3|frame_0000000777",
+      "captions": [
+        "Make Zucchini Pancakes",
+        "Whisk the wet ingredients.",
+        "Get out a medium-sized mixing bowl and melt 2 tablespoons of butter in it. Add 2 large eggs, 1 cup (240 ml) plus 2 tablespoons of milk, 2 tablespoons of light brown sugar, and 1 teaspoon of vanilla extract. Whisk the wet ingredients until the eggs are combined with the milk and sugars.You could substitute almond extract for the vanilla extract."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/PPkq2zhzwWA/frame_0000004746.jpg",
+      "sample_id": "PPkq2zhzwWA|9|frame_0000004746",
+      "captions": [
+        "Make Grape Jelly",
+        "Add the pectin and bring the juice to a full boil once more.",
+        "Get a vigorous, rolling boiling going for about a minute before moving on to the next step.."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/YJXfLHMLkqQ/frame_0000003097.jpg",
+      "sample_id": "YJXfLHMLkqQ|6|frame_0000003097",
+      "captions": [
+        "Make Chicken Taquitos",
+        "Put the shredded chicken slices in a line at the edges of a tortilla.",
+        "Roll it up carefully, making sure no chicken can get out."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/qQblAfMeuQQ/frame_0000002053.jpg",
+      "sample_id": "qQblAfMeuQQ|8|frame_0000002053",
+      "captions": [
+        "Make Cabbage Soup",
+        "Add the remaining ingredients.",
+        "Add the cabbage, onion, ketchup, tomato, sugar, lemon juice, paprika, and salt to the stockpot. Mix well to combine, making sure the cabbage is fully submerged in soup."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/lD2OOTx2G9k/frame_0000002607.jpg",
+      "sample_id": "lD2OOTx2G9k|9|frame_0000002607",
+      "captions": [
+        "Make Hostess Twinkies",
+        "Take the egg white mixture and pour it into the first mixture you made.",
+        "Mix everything until all the ingredients are well combined."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/nJ9Jx3jdRk4/frame_0000002710.jpg",
+      "sample_id": "nJ9Jx3jdRk4|1|frame_0000002710",
+      "captions": [
+        "Make Spider Cupcakes",
+        "Make cupcakes, following the directions of the mix box.",
+        "After baking, let them cool completely before moving on.;"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Y7QfH1ryzBA/frame_0000001697.jpg",
+      "sample_id": "Y7QfH1ryzBA|7|frame_0000001697",
+      "captions": [
+        "Make Kale Salad",
+        "Leave the dressed and massaged kale to sit for at least 15 minutes (and up to an hour or two).",
+        "Because kale leaves are so sturdy, they need a little time for the acid in your dressing (lemon juice or vinegar) to break down the leaves and make them softer.Note that if you plan to let your salad sit for more than an hour, you may want to refrigerate it during this time."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/3MKNNcI0GwI/frame_0000001001.jpg",
+      "sample_id": "3MKNNcI0GwI|6|frame_0000001001",
+      "captions": [
+        "Make Veal Milanese",
+        "Repeat coating process with the other piece of veal.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/hrknqPdtO7c/frame_0000002230.jpg",
+      "sample_id": "hrknqPdtO7c|5|frame_0000002230",
+      "captions": [
+        "Clean Flounder",
+        "Flip the fish over.",
+        "Perform the same steps of cutting and filleting on the other side of the fish."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/icVBTA9bxxo/frame_0000001745.jpg",
+      "sample_id": "icVBTA9bxxo|2|frame_0000001745",
+      "captions": [
+        "Make Chicken Cacciatore",
+        "Brown in olive oil and cook through in an oven-ready pan.Add chopped peppers and onions and cook in oil until soft.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/kIxRnbeju5w/frame_0000004252.jpg",
+      "sample_id": "kIxRnbeju5w|9|frame_0000004252",
+      "captions": [
+        "Make Vegetable Manchurian",
+        "Add a teaspoon of soy sauce and a little pepper powder.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/pT3_afWCk7I/frame_0000000863.jpg",
+      "sample_id": "pT3_afWCk7I|1|frame_0000000863",
+      "captions": [
+        "Make Fish Stock",
+        "Combine the fish bones and white wine in a large pot.",
+        "Add enough water to cover the bones, approximately 2 US quarts (2,000 ml).   Bring the contents of the boil, periodically skimming the white foam from the surface using a ladle. Once the pot is boiling, reduce the heat to a low simmer."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/N8n4WTDpxEw/frame_0000001297.jpg",
+      "sample_id": "N8n4WTDpxEw|0|frame_0000001297",
+      "captions": [
+        "Make Zucchini Pancakes",
+        "Shred and squeeze the zucchini.",
+        "You'll need about 3 medium zucchini in order to get 2 cups (450 g) of shredded zucchini. Wash the whole zucchini and trim away the ends. Shred the zucchini against the large side of a box grater. Put the shredded zucchini into a clean kitchen towel. Squeeze the towel over the sink so the excess liquid drains out into the sink.Removing the extra liquid will prevent the pancakes from becoming soggy."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/SmlA4e9velM/frame_0000000970.jpg",
+      "sample_id": "SmlA4e9velM|6|frame_0000000970",
+      "captions": [
+        "Make Kale Salad",
+        "Add nuts or seeds for crunch and flavor.",
+        "Toasted almonds are delicious along with Parmesan and dates or raisins.Cashew pieces or walnuts can add rich flavor. Sunflower seeds are delicious in summer salads."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/LSKuvjeOh5A/frame_0000001363.jpg",
+      "sample_id": "LSKuvjeOh5A|2|frame_0000001363",
+      "captions": [
+        "Cook West African White Soup and Pounded Yam",
+        "Add the stock fish head and smoked fish.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/eAva3W8N6uU/frame_0000002382.jpg",
+      "sample_id": "eAva3W8N6uU|14|frame_0000002382",
+      "captions": [
+        "Cajun Deep Fry a Turkey",
+        "Finished.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/ANkLDqNIJy8/frame_0000003125.jpg",
+      "sample_id": "ANkLDqNIJy8|2|frame_0000003125",
+      "captions": [
+        "Make Roasted Red Pepper Soup",
+        "Add potato, peppers, stock, thyme, and red pepper flakes.",
+        "Season to taste with salt and pepper. Cover and simmer about 30 minutes, until potatoes and peppers are tender."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/o_nSHMeNxlY/frame_0000002030.jpg",
+      "sample_id": "o_nSHMeNxlY|4|frame_0000002030",
+      "captions": [
+        "Make Caponata",
+        "Pour in the vinegar and sugar.",
+        "Stir the sugar through evenly. Leave to simmer gently for another 15 minutes. During this time the sauce should reduce."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Q6WPWAFVdiI/frame_0000001171.jpg",
+      "sample_id": "Q6WPWAFVdiI|2|frame_0000001171",
+      "captions": [
+        "Make Brazo De Gitano",
+        "Pour batter into tin and spread out evenly.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Ffi78tjAgI4/frame_0000002731.jpg",
+      "sample_id": "Ffi78tjAgI4|3|frame_0000002731",
+      "captions": [
+        "Fillet a Rainbow Trout Fish",
+        "Cut the fish you will need a sharp fillet knife.",
+        "If you don't have one, find the sharpest knife you have."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/4c8FJoxA4eY/frame_0000001965.jpg",
+      "sample_id": "4c8FJoxA4eY|2|frame_0000001965",
+      "captions": [
+        "Make Sausage and Penne Pasta",
+        "Add the feta cheese last, and some lemon juice and a little shaved rind.",
+        "Don't add too much or it will be too sour."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/4U4kRZfNTg0/frame_0000000171.jpg",
+      "sample_id": "4U4kRZfNTg0|0|frame_0000000171",
+      "captions": [
+        "Cook for a Southern Fish Fry",
+        "Prepare your fish.",
+        "After the fish have been cleaned, rinse them with fresh water and while they are wet, drop them in a container of seasoned cornmeal. The type of meal is up to the individual, but medium to fine grind yellow Cornmeal is popular in the south. Salt is the only usual seasoning, but when you get the hang of it, you may want to experiment with other spices. For a finer crust, you can add one part all purpose flour to each 4 parts of Cornmeal. This will allow the fish to cook longer before they brown, for a more well done fish."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/mG7kS5ec0kI/frame_0000002548.jpg",
+      "sample_id": "mG7kS5ec0kI|1|frame_0000002548",
+      "captions": [
+        "Make Jam Muffins",
+        "Pour the batter in the muffin tray.",
+        "Use a spoon or ice-cream scoop to pour the muffins easily in the muffin tray cups. Scrape any excess batter with a rubber spatula."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/2_NchLcESqo/frame_0000007934.jpg",
+      "sample_id": "2_NchLcESqo|6|frame_0000007934",
+      "captions": [
+        "Cook Jamaican Jerk Chicken",
+        "Remove chicken from oven or grill and serve, after it has rested for 5 minutes.",
+        "As meat cooks, the juices that keep it tender are released into the meat. If you cut the meat while it is still piping hot, these juices leak out and lead to dry, rough meat. But if you simply wait 5 minutes or so, the juices will reabsorb into the chicken, leading to a much more delicious bird."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/a9x3Z0mBtoI/frame_0000003377.jpg",
+      "sample_id": "a9x3Z0mBtoI|9|frame_0000003377",
+      "captions": [
+        "Make Bagels",
+        "Place the bagels on the prepared baking sheet.",
+        "Immediately place the sheet in the oven and bake for 15 minutes. Rotate the sheet tray 90 and cook for another 5 minutes, or until the bagels are tan to medium brown. The finished bagel should reach 185 on an instant read thermometer. Remove from the baking sheets and cool for 30 minutes before attempting to cut."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/ZdHEB2Jw0XU/frame_0000002191.jpg",
+      "sample_id": "ZdHEB2Jw0XU|2|frame_0000002191",
+      "captions": [
+        "Make Bone Broth",
+        "Simmer the broth.",
+        "Cook broth for 12 hours. A slow-cooker is a wonderful tool for broth-making!"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/WjmqAZevfqc/frame_0000006325.jpg",
+      "sample_id": "WjmqAZevfqc|4|frame_0000006325",
+      "captions": [
+        "Make Buttermilk Fried Chicken",
+        "Place cooked chicken on a platter and serve",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/emDEagPzJRk/frame_0000000436.jpg",
+      "sample_id": "emDEagPzJRk|0|frame_0000000436",
+      "captions": [
+        "Make Bannock",
+        "Mix some all-purpose white flour in a bowl",
+        "you can add in a handful of cornmeal or whole other grain (wheat, multi-grain, oat, corn).."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/p7VsuupS5EM/frame_0000001020.jpg",
+      "sample_id": "p7VsuupS5EM|0|frame_0000001020",
+      "captions": [
+        "Make Bacalhau",
+        "Drain, cool, peel, and slice the potatoes.",
+        "Pour the contents of the pan into a colander. Set the potatoes aside to cool. Once cool, remove the peel from the potatoes. Cut the potatoes into \u00bc to \u00bd inch slices.If you peeled the potatoes first, just slice the potatoes once cool."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/x7x4hTN5zfo/frame_0000000212.jpg",
+      "sample_id": "x7x4hTN5zfo|0|frame_0000000212",
+      "captions": [
+        "Make Bannock",
+        "Mix some all-purpose white flour in a bowl",
+        "you can add in a handful of cornmeal or whole other grain (wheat, multi-grain, oat, corn).."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/9OA_vruttK8/frame_0000000897.jpg",
+      "sample_id": "9OA_vruttK8|1|frame_0000000897",
+      "captions": [
+        "Make Lactation Cookies",
+        "Add the egg yolks and vanilla extract into the large mixing bowl and using beat until all the ingredients are thoroughly mixed together.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/PeskH2ypxQI/frame_0000000227.jpg",
+      "sample_id": "PeskH2ypxQI|0|frame_0000000227",
+      "captions": [
+        "Make Manicotti",
+        "Fold in 2 large eggs.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/80flXdGto6E/frame_0000002672.jpg",
+      "sample_id": "80flXdGto6E|6|frame_0000002672",
+      "captions": [
+        "Make Chicken Fried Steak",
+        "Gradually add milk, salt and pepper to the roux, whisking frequently.",
+        "Whisk until the mixture can coat the back of a spoon, about 4 to 7 minutes. Now you have gravy!"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/97Z-vl64Zb4/frame_0000006295.jpg",
+      "sample_id": "97Z-vl64Zb4|4|frame_0000006295",
+      "captions": [
+        "Make Mediterranean Vegetable Cheese Pie",
+        "Bake 35 to 40 minutes or until egg is set and a knife inserted into pie comes out clean.",
+        "Sprinkle grated cheeses evenly over top of pie and top with basil garnish. Return to oven for 5 minutes or until cheese melts."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/AClPyJdFUcs/frame_0000001173.jpg",
+      "sample_id": "AClPyJdFUcs|0|frame_0000001173",
+      "captions": [
+        "Make a Simple Meatloaf",
+        "Get the basic ingredients, ground meat, bread, and eggs.",
+        "The ratio should be about 1 lbs. meat to 4 slices of bread to one egg.;"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/I0AOXj_cnLE/frame_0000001347.jpg",
+      "sample_id": "I0AOXj_cnLE|0|frame_0000001347",
+      "captions": [
+        "Prepare Mexican Chilaquiles",
+        "Prepare to fry the tortillas.",
+        "Here's what you should do to prepare them:   Slice 8 corn tortillas into strips or wedges. Add canola oil to a skillet over medium-high heat. The oil should measure about 1/2 inch (1.27 cm) up the side of the pan. Fry the tortillas. Fry the tortillas in groups without overcrowding the pan for 10 to 20 seconds each until they are lightly browned and crisp. Remove the tortillas from the oil and drain them on paper towels."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/VmSSJnYh8-E/frame_0000000502.jpg",
+      "sample_id": "VmSSJnYh8-E|2|frame_0000000502",
+      "captions": [
+        "Make Chicken Piccata",
+        "Cook the chicken on both sides for 3-4 minutes.",
+        "You just want to get the outsides well-browned, but not burnt. If you didn't pound the chicken down, you'll want to turn the heat down a little and cook them slightly longer, flipping twice to ensure the middles of the chicken cook."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/6t0KNgNtR9E/frame_0000000848.jpg",
+      "sample_id": "6t0KNgNtR9E|4|frame_0000000848",
+      "captions": [
+        "Make Focaccia",
+        "Add 2 tablespoons of the oil, then add the warm water.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/z2bEAheSMdQ/frame_0000000546.jpg",
+      "sample_id": "z2bEAheSMdQ|0|frame_0000000546",
+      "captions": [
+        "Cook Ham Hocks",
+        "Add the beans and bay leaf.",
+        "Stir the soaked and drained beans into the Dutch oven, along with the bay leaf. Add more pepper, if desired. Saut\u00e9 for another 1 minute."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/UBKk3b8l4Es/frame_0000002799.jpg",
+      "sample_id": "UBKk3b8l4Es|6|frame_0000002799",
+      "captions": [
+        "Make Brazo De Gitano",
+        "In a separate bowl, beat the egg whites until fluffy.",
+        "Fold the whites into the yolk mixture using a spatula."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/GNzDPIP_FBA/frame_0000003501.jpg",
+      "sample_id": "GNzDPIP_FBA|3|frame_0000003501",
+      "captions": [
+        "Cook Jamaican Rice and Peas",
+        "Add coconut milk.",
+        "This can be bought pre-packaged or prepared from scratch:   Obtain one dried coconut and dice it. Place in blender cover with water. Select blend or grate. Repeat until desired texture is reached. Pour into a strainer, over collecting bowl, squeeze excess milk from coconut. Discard coconut."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/BapAYZkK5sw/frame_0000002765.jpg",
+      "sample_id": "BapAYZkK5sw|4|frame_0000002765",
+      "captions": [
+        "Make Barbacoa",
+        "Cover and cook on low for 8 to 10 hours.",
+        "If you want it done sooner, set the slow cooker to high and cook the beef for 6 hours.Resist the temptation to open the lid and peek at your meal as it cooks. Doing so releases the trapped steam, and that steam is partially responsible for cooking the meat. As a result, the overall cooking time can increase 15 to 30 minutes every time you open the slow cooker."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/OUXiEGf3yDg/frame_0000001765.jpg",
+      "sample_id": "OUXiEGf3yDg|6|frame_0000001765",
+      "captions": [
+        "Cook Navy Beans",
+        "Saute the onion, celery, and garlic in olive oil.",
+        "Coat your saucepan with a thin layer of olive oil. Then turn on your stove top and set it to a medium-high heat. Add your onion, celery, and garlic to the pan and allow the ingredients to cook for 3 - 5 minutes.         If you notice your garlic start to brown, turn your heat down or begin the next phase of this dish. When cooked too long/burned, garlic can become bitter."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Oucu1ypspf4/frame_0000001290.jpg",
+      "sample_id": "Oucu1ypspf4|0|frame_0000001290",
+      "captions": [
+        "Make High Calorie Granola Bars",
+        "Add wet ingredients to dry ingredients and mix well.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/R8A8Q_LNcDE/frame_0000002879.jpg",
+      "sample_id": "R8A8Q_LNcDE|8|frame_0000002879",
+      "captions": [
+        "Make Conchas",
+        "Add cocoa to one half.",
+        "Sprinkle the cocoa powder over one half of the dough. Blend it into the dough using your hands or a mixing spoon until the entire half is a rich, even brown.   Note that the cocoa powder is technically optional. If you do not want any chocolate topping, you can skip it. Leave the dough colorless or add food coloring to it as instructed to do with the second half. Similarly, you could use cocoa powder to flavor and color both halves of the topping. To do so, simply double the total amount of cocoa powder called for in the original recipe and add it to the full batch of dough without dividing the dough into halves."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/TnTUUATM6Lg/frame_0000003739.jpg",
+      "sample_id": "TnTUUATM6Lg|2|frame_0000003739",
+      "captions": [
+        "Make Salbutes",
+        "Portion the dough and roll it into balls.",
+        "Divide the masa dough into small balls. Roll each ball between the palms of your hand to smooth them out. Each ball should be about 2-inches (5 cm) in size. Set the balls aside to rest while you heat the oil and prepare the salbutes toppings."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/6t0KNgNtR9E/frame_0000001026.jpg",
+      "sample_id": "6t0KNgNtR9E|8|frame_0000001026",
+      "captions": [
+        "Make Focaccia",
+        "Add 2 tablespoons of the oil, then add the warm water.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/bjYsCRu5hRQ/frame_0000001568.jpg",
+      "sample_id": "bjYsCRu5hRQ|0|frame_0000001568",
+      "captions": [
+        "Cook Greek Moussaka",
+        "Lay as many slices of eggplant as possible on the rack of a grill pan and brush generously with olive oil.",
+        "Grill for 5-10 minutes, turning the slices over and brushing again with olive oil, until they are golden brown on both sides. Set aside and repeat with the remaining slices of aubergine."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/KKBkY-7TCw0/frame_0000001166.jpg",
+      "sample_id": "KKBkY-7TCw0|2|frame_0000001166",
+      "captions": [
+        "Make Fried Green Tomatoes",
+        "Pour \u00bc cup of flour into a bowl.",
+        "Lay the tomatoes slices in the flour, coating both sides evenly. Once you have done this, lay the flour-coated slices in the buttermilk and egg mixture, making sure they are fully coated in the liquid. Once coated in the egg mixture, dredge them in the cornmeal mixture (or whatever crunchy coating you chose to use.) Make sure they get a generous dipping in the crunchy concoction."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/JYNMPoedb8M/frame_0000000935.jpg",
+      "sample_id": "JYNMPoedb8M|1|frame_0000000935",
+      "captions": [
+        "Make Roasted Red Pepper Soup",
+        "Add potato, peppers, stock, thyme, and red pepper flakes.",
+        "Season to taste with salt and pepper. Cover and simmer about 30 minutes, until potatoes and peppers are tender."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/p1IqLKterBY/frame_0000000682.jpg",
+      "sample_id": "p1IqLKterBY|0|frame_0000000682",
+      "captions": [
+        "Make Calzones",
+        "Roll out the dough.",
+        "Remove the plastic wrap from the tray of dough pieces. Place the first piece of dough on a floured surface and use a rolling pin to roll it into disc shape. Continue until all the dough pieces are rolled into discs."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/d24p9h5Ozng/frame_0000001779.jpg",
+      "sample_id": "d24p9h5Ozng|14|frame_0000001779",
+      "captions": [
+        "Make Crawfish Etouffe",
+        "Once the roux has achieved the color you desire, immediately remove from heat and add the chopped vegetables, stir until the vegetables are soft.",
+        "This is very important to stop the roux from continuing to cook and burning."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/JiqGpq5Qz7Q/frame_0000000550.jpg",
+      "sample_id": "JiqGpq5Qz7Q|1|frame_0000000550",
+      "captions": [
+        "Clean Trout for Cooking",
+        "Cut the trout up through the belly.",
+        "Run the knife along the length of the fish, stopping just before you reach the head. This cut doesn\u2019t need to be very deep\u2014just apply enough pressure to get through the soft skin on the underbelly without damaging the internal organs.Be extremely careful when handling the knife, as you\u2019ll be cutting in the direction of your opposite hand. Keeping the organs intact while you open the belly will make them easier to remove later on."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/48x2rfcYGSo/frame_0000002672.jpg",
+      "sample_id": "48x2rfcYGSo|8|frame_0000002672",
+      "captions": [
+        "Make San Choy Bau",
+        "While everything else is cooking, start to separate the lettuce leaves and make small cups of them.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/RahPHnZ-Ni4/frame_0000004801.jpg",
+      "sample_id": "RahPHnZ-Ni4|5|frame_0000004801",
+      "captions": [
+        "Cook Greek Moussaka",
+        "Preheat the oven to 180C/350F/Gas 4.Arrange a layer of eggplant slices in the bottom of the prepared dish and cover with a layer of the meat sauce.",
+        "Add another layer of the eggplant slices and another of the meat sauce. Continue layering in this fashion, finishing with a layer of sliced eggplant. Carefully pour the bechamel sauce on the top of the dish and spread evenly. Sprinkle with the grated feta cheese and bake in the oven for about 1 hour, or until the top is golden brown and the Moussaka is heated through."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/VTbJBkzzbVg/frame_0000001076.jpg",
+      "sample_id": "VTbJBkzzbVg|3|frame_0000001076",
+      "captions": [
+        "Make Caesar Salad Dressing",
+        "Mash the anchovies and garlic into a paste.",
+        "Using a sharp knife, chop up the anchovy fillets and garlic cloves. Mash the two together with the flat side of the blade, then sprinkle the mixture with salt.A small can of anchovy fillets should contain all you need. Get the anchovies packed in oil, then drain well before using them for this dressing. If you don't wish to use anchovy fillets, you could 2 tsp (10 ml) of prepared anchovy paste instead.;"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Z8cQ0F-UjUg/frame_0000001465.jpg",
+      "sample_id": "Z8cQ0F-UjUg|0|frame_0000001465",
+      "captions": [
+        "Prepare Mexican Chilaquiles",
+        "Add the turkey and the chiles.",
+        "Add 2 cups of diced cooked turkey and 1 4 oz. can of diced green chiles. Saut\u00e9 those ingredients for another three minutes."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/pcbX1pcrMzY/frame_0000002146.jpg",
+      "sample_id": "pcbX1pcrMzY|7|frame_0000002146",
+      "captions": [
+        "Make Bunuelos",
+        "Drain off the excess oil.",
+        "Remove the finished bu\u00f1uelo from the hot oil and transfer it to a plate lined with paper towels. All the excess oil to drain off for several seconds."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/p2l_NHMvnmc/frame_0000000945.jpg",
+      "sample_id": "p2l_NHMvnmc|0|frame_0000000945",
+      "captions": [
+        "Make Healthier Fish Sticks",
+        "Preheat your oven.",
+        "Set your oven to a temperature between 400 and 450 degrees F (204-232 degrees C). Depending on the strength of your oven and the size of your fish sticks, cooking time will vary."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/g65DFNjBLzQ/frame_0000001205.jpg",
+      "sample_id": "g65DFNjBLzQ|5|frame_0000001205",
+      "captions": [
+        "Make Caponata",
+        "Dice the eggplant.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/SRHldlwPlbw/frame_0000001453.jpg",
+      "sample_id": "SRHldlwPlbw|2|frame_0000001453",
+      "captions": [
+        "Make Crepes Suzette",
+        "Flambe for 5 seconds.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Ppl-hnjwX58/frame_0000000552.jpg",
+      "sample_id": "Ppl-hnjwX58|2|frame_0000000552",
+      "captions": [
+        "Cook Kohlrabi",
+        "Transfer the kohlrabi to your prepared baking sheet.",
+        "Spread the kohlrabi pieces out onto the baking sheet in a single, flat layer.  The kohlrabi needs to be restricted to a single layer. If you end up piling it onto the sheet, some pieces may cook faster than others."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/6jGENRGvFVo/frame_0000000918.jpg",
+      "sample_id": "6jGENRGvFVo|0|frame_0000000918",
+      "captions": [
+        "Make Beef Stroganoff",
+        "Add the onion, garlic and mushrooms.",
+        "Chop up two medium onions and finely chop the garlic. Slice the mushrooms. Add them all to the same skillet you were browning the meat in. Stir occasionally until the onions are tender and look slightly translucent."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/_DkJD8XTrK8/frame_0000002560.jpg",
+      "sample_id": "_DkJD8XTrK8|3|frame_0000002560",
+      "captions": [
+        "Make Aguachile",
+        "Plate the dish.",
+        "Place all of the ingredients on a platter or large plate.   First, place a layer of cucumbers on the plate. Then, put the shrimp on top. Cover the shrimp with the sliced onion. Pour the chili mixture over the other ingredients."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/TWVD2qeIMb4/frame_0000001351.jpg",
+      "sample_id": "TWVD2qeIMb4|0|frame_0000001351",
+      "captions": [
+        "Make Rabbit Fricassee",
+        "Divide the rabbit into 8 pieces.",
+        "(You can ask your butcher to do this for you).   If you're concerned about the rabbit's tenderness, marinate the rabbit for one night in the pot first, and when you cook the rabbit, make sure that the heat isn't that high; this way the rabbit will definitely become softer and tastier.      ;"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/-25-1nbOki0/frame_0000004063.jpg",
+      "sample_id": "-25-1nbOki0|4|frame_0000004063",
+      "captions": [
+        "Make Nigerian Style Jollof Rice",
+        "Cook on low medium heat.",
+        "Check your rice after at least 10 minutes, using a wooden spatula to dip into the rice. This helps with getting the sauce to get the bottom of the pot, so that it does not start burning when the rice is not cooked."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/1MTvzylgA2c/frame_0000002407.jpg",
+      "sample_id": "1MTvzylgA2c|14|frame_0000002407",
+      "captions": [
+        "Make a Monte Cristo Sandwich",
+        "Cook for eight to ten minutes slowly, until the cheese is melting and the bread turns golden brown.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/so35QalguYM/frame_0000001322.jpg",
+      "sample_id": "so35QalguYM|16|frame_0000001322",
+      "captions": [
+        "Make Potstickers (Guo Tie)",
+        "Add a small amount of water to the pan.",
+        "Once one side of the potstickers are brown, lift the lid and pour 1\u20133 tablespoons (15\u201345 mL) water onto the pan, just enough to cover the base of the pan with a shallow layer.   Pour the water while rapidly moving in a circular motion around the edge of the pan. This distributes the water evenly and prevents one part of the pan from cooling down too quickly. This also reduces splatter from hot oil and water coming into contact."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/kb1Zf7YgBOw/frame_0000000735.jpg",
+      "sample_id": "kb1Zf7YgBOw|0|frame_0000000735",
+      "captions": [
+        "Make a Spicy Mango and Tomato Salad",
+        "De-core and cut the tomatoes in halves, quarters, and halves.",
+        "They will also be in a block form as well."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/qLvMDtvlQDo/frame_0000002236.jpg",
+      "sample_id": "qLvMDtvlQDo|6|frame_0000002236",
+      "captions": [
+        "Make Artisan Bread",
+        "Shape the dough into a ball after the 15 minutes are complete.",
+        "Don't worry too much about making the ball perfect in shape. It can be sloppy and jagged. The bread will straighten out once baked."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/XvH8_rf-d-U/frame_0000001186.jpg",
+      "sample_id": "XvH8_rf-d-U|4|frame_0000001186",
+      "captions": [
+        "Make Giblet Gravy",
+        "Sprinkle in flour and whisk.",
+        "Once the fat has heated, about two minutes, add in \u00bd cup (118.2 ml) of flour. Use a whisk to mix the fat and the flour to make a paste. If the paste looks too thin or greasy, add in a few more pinches of flour until the consistency is thick.Keep cooking the mixture, whisking constantly, until it browns, about ten minutes."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/6t0KNgNtR9E/frame_0000001756.jpg",
+      "sample_id": "6t0KNgNtR9E|14|frame_0000001756",
+      "captions": [
+        "Make Focaccia",
+        "Knead the dough by hand for about ten minutes, working in any remaining flour.",
+        "If in doubt, knead longer than you think you need to. It is difficult to over-knead by hand. Sprinkle flour on top of the dough as needed to keep your fingers from sticking. Kneaded dough should be springy and smooth when it is ready. See if it bounces back when you poke a finger into it. Also try the \"earlobe test\". Pinch an earlobe-sized piece of dough and see if it feels about like an earlobe."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/1c2wEDmO1pc/frame_0000000939.jpg",
+      "sample_id": "1c2wEDmO1pc|2|frame_0000000939",
+      "captions": [
+        "Grill a Pizza",
+        "Close the lid.",
+        "The pizza toppings will cook better with the lid on the grill because it traps the heat and turns it back on the pizza. You'll only need to cook it about another 5 minutes, perhaps a bit less. If it smells like it's burning, you may need to move the pizza over to a cooler part of the grill.Check it after 3 minutes to see if it's done. Sometimes, the pizza will cook faster."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/0cP2tMmT40A/frame_0000003232.jpg",
+      "sample_id": "0cP2tMmT40A|12|frame_0000003232",
+      "captions": [
+        "Make Pine Nuts Pasta",
+        "Boil the pasta for about 7-8 minutes, until the pasta is soft but slightly tender.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/Lm2-8Z6MhoM/frame_0000000869.jpg",
+      "sample_id": "Lm2-8Z6MhoM|0|frame_0000000869",
+      "captions": [
+        "Make Chocoflan",
+        "Get out another bowl and in it mix the flour, baking powder, baking soda and cocoa.",
+        "Then put the flour mixture with the butter mixture and add about half of the buttermilk."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/lwWL8rCfzeI/frame_0000003266.jpg",
+      "sample_id": "lwWL8rCfzeI|4|frame_0000003266",
+      "captions": [
+        "Make Kielbasa and Cabbage Soup",
+        "Combine all of the ingredients, except for the potatoes, in a large saucepan.",
+        "Transfer the browned kielbasa, onions, and celery into a large saucepan. Add the shredded cabbage, sliced carrots, bay leaf, and thyme. Pour in the white vinegar, beef broth, and water. Stir to combine.Hold off on the potatoes for now. You can use prepared beef broth or you can make you own using bouillon cubes and hot water. Typically, it is 1 cube per 1 cup (240 milliliters) of water, but check the package to be certain."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/oclcHbnHoj4/frame_0000000711.jpg",
+      "sample_id": "oclcHbnHoj4|4|frame_0000000711",
+      "captions": [
+        "Make Chicago Style Pizza",
+        "Add any of your preferred pizza toppings over the tomato sauce, then place in the oven for 30 minutes.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/NcnYE_w8x1Q/frame_0000000840.jpg",
+      "sample_id": "NcnYE_w8x1Q|3|frame_0000000840",
+      "captions": [
+        "Make Cheese Curds",
+        "Let it sit.",
+        "Still the milk, then cover it and allow it to rest for 30 to 45 minutes.  To still the milk, hold the ladle at the top of the milk until no more ripples form. The milk mixture should turn into a gel after several minutes. Wait until the gel can be cleanly cut before continuing."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/9a4O1k9MEPs/frame_0000002155.jpg",
+      "sample_id": "9a4O1k9MEPs|2|frame_0000002155",
+      "captions": [
+        "Make Atole",
+        "Pour the milk into the large saucepan or pot.",
+        "Place on the heat and cook until it simmers. Stir often to prevent the mixture from burning."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/VyUpx-QpdIg/frame_0000001531.jpg",
+      "sample_id": "VyUpx-QpdIg|5|frame_0000001531",
+      "captions": [
+        "Make Tater Tot Hotdish",
+        "Put the browned beef, vegetables, and sauce into a large glass cake pan.",
+        "Mix well and spread them evenly across the pan."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/eF0DOk-zYYc/frame_0000000839.jpg",
+      "sample_id": "eF0DOk-zYYc|1|frame_0000000839",
+      "captions": [
+        "Dehydrate Eggs for Powdered Eggs",
+        "Pour the eggs into the dehydrator trays.",
+        "Roughly half a dozen whole eggs should fit on each standard dehydrator tray. Each tray should also be able to hold one dozen egg whites or one dozen egg yolks.   When working with raw eggs, simply pour the beaten egg mixture into each tray. A thin layer is preferable to a thick one. When working with cooked eggs, evenly spread the cooked egg pieces out over the tray, keeping them in a single layer."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/uUAmGUebSs4/frame_0000000894.jpg",
+      "sample_id": "uUAmGUebSs4|4|frame_0000000894",
+      "captions": [
+        "Bake a Sweet Potato Pie",
+        "Pour the filling over the pie crust in the pie pan.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/imA4r0K6J9M/frame_0000001431.jpg",
+      "sample_id": "imA4r0K6J9M|1|frame_0000001431",
+      "captions": [
+        "Cook Mongolian Beef",
+        "Add the sugar, and stir again.",
+        "Then, bring the beef, vegetables, and sauce together."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/whhDBtocr0M/frame_0000001673.jpg",
+      "sample_id": "whhDBtocr0M|0|frame_0000001673",
+      "captions": [
+        "Cook a Veal Roast",
+        "You also choose to add vegetable, chicken or beef stock to the pan instead of water or wine.",
+        "A combination of liquids can also work - it depends on your taste preferences."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/UBXpsSSLiN8/frame_0000001105.jpg",
+      "sample_id": "UBXpsSSLiN8|0|frame_0000001105",
+      "captions": [
+        "Make Cranberry Sauce",
+        "Blend the sugar and orange juice.",
+        "Heat the orange juice over medium heat in a medium-sized saucepan, and stir in the sugar to blend. Stir continuously, working around the edges to make sure all the sugar is dissolved."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/kpIfA_AfQDI/frame_0000002250.jpg",
+      "sample_id": "kpIfA_AfQDI|1|frame_0000002250",
+      "captions": [
+        "Make Raw Hummus",
+        "Blend the ingredients.",
+        "Blend all of the ingredients together until the dip becomes creamy. For the best effect, check the consistency and add a bit of water if necessary."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/G2qRmRfb_hI/frame_0000004284.jpg",
+      "sample_id": "G2qRmRfb_hI|4|frame_0000004284",
+      "captions": [
+        "Make Pupusas",
+        "Fill the pupusas.",
+        "Take a ball of dough and press your thumb into the center. There should be a little indentation. Place 1 tablespoon (14.8 ml) of white cheese into the indentation and cover the dough over it. Do this will all the other dough balls.The cheese should be completely sealed into the pupusa. Otherwise, it will leak out when you fry it."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/8jMjUsvVfXY/frame_0000002054.jpg",
+      "sample_id": "8jMjUsvVfXY|0|frame_0000002054",
+      "captions": [
+        "Make Soy Patties",
+        "Mix all the ingredients together apart from the breadcrumbs.",
+        "Mix until a thick mixture forms."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/icJZLTcZNB0/frame_0000002220.jpg",
+      "sample_id": "icJZLTcZNB0|1|frame_0000002220",
+      "captions": [
+        "Make Coconut Strawberries",
+        "Add the coconut shavings and 1 gelatin powder package to the bowl.",
+        "Mix well."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/bdjFDKQ6BkQ/frame_0000001685.jpg",
+      "sample_id": "bdjFDKQ6BkQ|5|frame_0000001685",
+      "captions": [
+        "Cook Liver and Onions",
+        "Add the stock or broth to the pan and then place the cooked onions on top of the liver slices.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/5dpyprPV4r8/frame_0000000872.jpg",
+      "sample_id": "5dpyprPV4r8|5|frame_0000000872",
+      "captions": [
+        "Cook Lamb Shanks",
+        "Add the vegetables, peppercorns and wine.",
+        "Arrange the vegetables and garlic cloves around the lamb shanks, and drop in the peppercorns. Pour the wine over the entire contents of the pot. Let the red wine come to a boil, and boil it for three minutes. Add the water and reduce the heat to bring everything to a quick simmer.   Boiling the wine for three minutes will lower the alcohol content a bit, leaving the deep flavor of the wine behind. With the addition of the water, the shanks and vegetables should be fully submerged in liquid. If they aren't, add a little more water."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/lD2OOTx2G9k/frame_0000005296.jpg",
+      "sample_id": "lD2OOTx2G9k|21|frame_0000005296",
+      "captions": [
+        "Make Hostess Twinkies",
+        "Get a large bowl and combine the sugar, flour, baking powder, and salt.",
+        "Create a hole in the middle (like a well). Then add the egg yolks, water, oil, and vanilla. Mix everything together until you get a smooth mixture. Put the bowl on the side.;"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/x7x4hTN5zfo/frame_0000002295.jpg",
+      "sample_id": "x7x4hTN5zfo|4|frame_0000002295",
+      "captions": [
+        "Make Bannock",
+        "Bake for about 45 minutes at 375 (some put it in at 450 for 5 minutes, then turn down to 350 degrees) or when crust is golden.",
+        "No desc"
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    },
+    {
+      "image": "../archive/htstep/frames/eVpC1Qi_QG8/frame_0000003412.jpg",
+      "sample_id": "eVpC1Qi_QG8|12|frame_0000003412",
+      "captions": [
+        "Make Caldo De Camaron",
+        "Strain the liquid.",
+        "Pour the contents of the stockpot through a colander. Reserve both the shrimp and liquid, but set them aside separately.   The water in which you boiled the shrimp has been flavored with the taste of shrimp. You will add this to your stock just before you finish the soup for an added hint of shrimp in the taste of the broth."
+      ],
+      "caption_source": [
+        "goal",
+        "step",
+        "desc"
+      ]
+    }
+  ]
+}

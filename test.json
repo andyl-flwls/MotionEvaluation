@@ -1,0 +1,49 @@
+{
+    "title": "Subjective Evaluation of Video Captions",
+    "instructions": "Please watch each video and rate the provided captions based on their accuracy and relevance. Select the caption that you think best describes the video.",
+    "groups": [
+      {
+        "video": "videos/visualization_angie_train/chemistry#67733_audio.mp4",
+        "sample_id": "sample_001",
+        "captions": [
+          "Caption for Video 1 Sample 1",
+          "Caption for Video 1 Sample 2",
+          "Caption for Video 1 Sample 3"
+        ],
+        "caption_source": [
+          "Source for Video 1 Sample 1",
+          "Source for Video 1 Sample 2",
+          "Source for Video 1 Sample 3"
+        ]
+      },
+      {
+        "video": "/Users/andyliu/Downloads/user_study/videos/visualization_angie_train/chemistry#68546_audio.mp4",
+        "sample_id": "sample_002",
+        "captions": [
+          "Caption for Video 2 Sample 1",
+          "Caption for Video 2 Sample 2",
+          "Caption for Video 2 Sample 3"
+        ],
+        "caption_source": [
+          "Source for Video 2 Sample 1",
+          "Source for Video 2 Sample 2",
+          "Source for Video 2 Sample 3"
+        ]
+      },
+      {
+        "video": "/Users/andyliu/Downloads/user_study/videos/visualization_angie_train/chemistry#68546_audio.mp4",
+        "sample_id": "sample_003",
+        "captions": [
+          "Caption for Video 3 Sample 1",
+          "Caption for Video 3 Sample 2",
+          "Caption for Video 3 Sample 3"
+        ],
+        "caption_source": [
+          "Source for Video 3 Sample 1",
+          "Source for Video 3 Sample 2",
+          "Source for Video 3 Sample 3"
+        ]
+      }
+    ]
+  }
+  
