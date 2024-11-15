@@ -165,7 +165,7 @@ def generate_html(json_file, output_file, idx):
       var sample_ids = [];
       var valid = true;
 
-      for (var i = 1; i <= 8; i++) {{
+      for (var i = 1; i <= 16; i++) {{
           var groupName = "group_" + i;
           var selectedValue = document.querySelector('input[name="' + groupName + '"]:checked')?.value;
           choices.push(selectedValue || "N/A");
