@@ -76,10 +76,9 @@ def generate_html(json_file, output_file, idx):
       <div></div>
       <div>
         <table style="table-layout: fixed;">
-          <col span="1" style="width: 25%;">
-          <col span="1" style="width: 25%;">
-          <col span="1" style="width: 25%;">
-          <col span="1" style="width: 25%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
+          <col span="1" style="width: 33%;">
           <thead>
             <tr>
               <th style="text-align: center">Reference</th>

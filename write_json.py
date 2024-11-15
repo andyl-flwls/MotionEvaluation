@@ -1,12 +1,13 @@
 import os
 import json
 import random
+from copy import deepcopy
 
-paths_group1 = ['videos/mm-diffusion']
-path_group2 = ['videos/new_sample_output_videos2', 'videos/new_sample_output_videos']
-path_group3 = ['videos/visualization_train_ours', 'videos/visualization_eval_ours']
-path_group4 = ['videos/visualization_train_s2g', 'videos/visualization_eval_s2g']
-path_group5 = ['videos/visualization_train_angie', 'videos/visualization_eval_angie']
+path_group1 = ['videos/mmm']
+path_group2 = ['videos/momask']
+path_group3 = ['videos/stmc']
+path_group4 = ['videos/ours']
+# path_group5 = ['videos/real']
 
 
 # 25 videos from each group, in total 125 videos, if we recruit 20 participants, 
@@ -24,7 +25,7 @@ for i in range(num_participants):
     all_sampled_paths = []
 
     cur_group_videos = []
-    for path in paths_group1:
+    for path in path_group1:
         # randomly sample 25 videos
         for video in os.listdir(path):
             video_path = os.path.join(path, video)
@@ -63,15 +64,15 @@ for i in range(num_participants):
     sampled_videos = random.sample(cur_group_videos, 4)
     all_sampled_paths.extend(sampled_videos)
 
-    cur_group_videos = []
-    for path in path_group5:
-        # randomly sample 25 videos
-        for video in os.listdir(path):
-            video_path = os.path.join(path, video)
-            cur_group_videos.append(video_path)
+    # cur_group_videos = []
+    # for path in path_group5:
+    #     # randomly sample 25 videos
+    #     for video in os.listdir(path):
+    #         video_path = os.path.join(path, video)
+    #         cur_group_videos.append(video_path)
 
-    sampled_videos = random.sample(cur_group_videos, 4)
-    all_sampled_paths.extend(sampled_videos)
+    # sampled_videos = random.sample(cur_group_videos, 4)
+    # all_sampled_paths.extend(sampled_videos)
 
 
 
@@ -86,65 +87,51 @@ if not os.path.exists(json_path):
 
 # Step 3: Write the participant sets to a JSON file
 json_base = {
-    "title": "Subjective Evaluation of Gesture Videos",
+    "title": "Subjective Evaluation of Human Motion Videos",
 
-    "instructions": "Please watch each video and rate the videos based on Four evaluation metrics,\n \
-        1. Realness: How realistic the video looks\n \
-        2. Diversity: How diverse does the gesture pattern presen\n \
-        3. Naturalness: Are speech and gesture synchronized in this video\n \
-        4. Overall: Overall quality of the video\n \
+    "instructions": "Please watch each video and rate the videos based on Three evaluation metrics,\n \
+        1. Realness: How human-like the motion in the video looks\n \
+        2. Alignment: How close the motion represents to its text description\n \
+        3. Overall: Overall quality of the video\n \
     Please rate each video on a scale of 1 to 5, where 1 is the lowest and 5 is the highest\n",
 
     "groups":[]
 }
 
 for i, participant_set in participant_sets.items():
-    
-    cur_json = json_base.copy()
+    # do deep copy, do not modify the original json_base
+    cur_json = deepcopy(json_base)
     for video_path in participant_set:
         id_name = None
-        if 'mm-diffusion' in video_path:
-            id_name = 'mm-diffusion'
-        elif 'new_sample_output_videos2' in video_path:
-            id_name = 'gt'
-        elif 'new_sample_output_videos' in video_path:
-            id_name = 'gt'
-        elif 'visualization_train_ours' in video_path:
+        if 'mmm' in video_path:
+            id_name = 'mmm'
+        elif 'momask' in video_path:
+            id_name = 'momask'
+        elif 'stmc' in video_path:
+            id_name = 'stmc'
+        elif 'ours' in video_path:
             id_name = 'ours'
-        elif 'visulization_eval_ours' in video_path:
-            id_name = 'ours'
-        elif 'visualization_train_s2g' in video_path:
-            id_name = 's2g'
-        elif 'visulization_eval_s2g' in video_path:
-            id_name = 's2g'
-        elif 'visualization_train_angie' in video_path:
-            id_name = 'angie'
-        elif 'visulization_eval_angie' in video_path:
-            id_name = 'angie'
+        elif 'real' in video_path:
+            id_name = 'real'
 
         video_path = '../' + video_path
         group = {
             "sample_id": id_name,
             # the video path
             "video": video_path,
-            "captions": [ # realness
-                "1. Terrible, can't recognized as human gestures\n\
-                2. Poor, it is not real\n\
+            "captions": [ 
+                # realness
+                "1. Terrible, Completely Unnatural movements\n\
+                2. Poor, with many errors and unnatural\n\
                 3. Fair, hard to judge\n\
                 4. Good, better, it looks real\n\
-                5. Excellent, it is what a human would do\n",
-                # diversity
-                "1. Terrible, it is not diverse at all\n\
-                2. Poor, it is not diverse\n\
+                5. Excellent, it is what a natural human motion\n",
+                # alignment
+                "1. Terrible, it is not what the text describes at all\n\
+                2. Poor, poorly aligned with the text description\n\
                 3. Fair, it is hard to judge\n\
-                4. Good, it various but a little bit limited\n\
-                5. Excellent, it is what a human would do\n",
-                # synchrony
-                "1. Terrible, it is not synchronized at all\n\
-                2. Poor, it is not synchronized\n\
-                3. Fair, it is hard to judge\n\
-                4. Good, it is synchronized but not perfect\n\
-                5. Excellent, it is perfectly synchronized\n",
+                4. Good, almost aligns with text, with small error\n\
+                5. Excellent, it is exactly what the text describes\n",
                 # overall
                 "1. Terrible, it is not good at all\n\
                 2. Poor, it is not good\n\

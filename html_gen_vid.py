@@ -49,7 +49,7 @@ def generate_html(json_file, output_file, idx):
   <div>
     <h1>{data['title']}</h1>
     <p>Thank you for participating in the subjective evaluation.</p>
-    <p><strong>Instructions (测试说明)</strong>: </p>
+    <p><strong>Instructions</strong>: </p>
     <p>{data['instructions'].replace('\n', '<br>')}</p>
     <br>
     <form id="evaluationForm">
@@ -62,17 +62,15 @@ def generate_html(json_file, output_file, idx):
       <h3>Group {idx + 1}</h3>
       <div>
         <table style="table-layout: fixed;">
-            <col span="1" style="width: 20%;">
-            <col span="1" style="width: 20%;">
-            <col span="1" style="width: 20%;">
-            <col span="1" style="width: 20%;">
-            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 25%;">
+            <col span="1" style="width: 25%;">
           <thead>
             <tr>
                 <th style="text-align: center">Reference Video</th>
                 <th style="text-align: center">Realness Quality</th>
-                <th style="text-align: center">Diversity Quality</th>
-                <th style="text-align: center">Naturalness Quality</th>
+                <th style="text-align: center">Alignment Quality</th>
                 <th style="text-align: center">Overall Quality</th>
             </tr>
           </thead>
@@ -117,17 +115,6 @@ def generate_html(json_file, output_file, idx):
                 </div>
                 <div class="warning" id="warning_group_{idx + 1}_rating_3">Please rate this metric.</div>
               </td>
-              <td style="text-align: center">
-                {group['captions'][3].replace('\n', '<br>')}<br>
-                <div class="rating" id="group_{idx + 1}_rating_4">
-                  <label><input type="radio" name="group_{idx + 1}_rating_4" value="1"> 1</label>
-                  <label><input type="radio" name="group_{idx + 1}_rating_4" value="2"> 2</label>
-                  <label><input type="radio" name="group_{idx + 1}_rating_4" value="3"> 3</label>
-                  <label><input type="radio" name="group_{idx + 1}_rating_4" value="4"> 4</label>
-                  <label><input type="radio" name="group_{idx + 1}_rating_4" value="5"> 5</label>
-                </div>
-                <div class="warning" id="warning_group_{idx + 1}_rating_4">Please rate this metric.</div>
-              </td>
             </tr>"""
 
         # # Add hidden inputs for caption sources
@@ -156,7 +143,7 @@ def generate_html(json_file, output_file, idx):
       <textarea id="resultOutput"></textarea>
     </div>
     <div style="display: flex; justify-content: center; margin-top: 20px;">
-      <iframe src="https://forms.gle/2hFKaaNJ8Etjdyhk9" width="640" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe src="https://forms.gle/GGixRXizAfwvUSJm8" width="640" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 </div>
@@ -178,7 +165,7 @@ def generate_html(json_file, output_file, idx):
       var sample_ids = [];
       var valid = true;
 
-      for (var i = 1; i <= 20; i++) {{
+      for (var i = 1; i <= 8; i++) {{
           var groupName = "group_" + i;
           var selectedValue = document.querySelector('input[name="' + groupName + '"]:checked')?.value;
           choices.push(selectedValue || "N/A");
@@ -195,7 +182,7 @@ def generate_html(json_file, output_file, idx):
           // sample_ids.push(document.querySelector('#' + groupName + '_sample_id_' + selectedValue).value);
 
           // Get ratings for each caption
-          for (var j = 1; j <= 4; j++) {{
+          for (var j = 1; j <= 3; j++) {{
               var rating = document.querySelector('input[name="' + groupName + '_rating_' + j + '"]:checked')?.value;
               if (!rating) {{
                   document.getElementById('warning_' + groupName + '_rating_' + j).style.display = 'block';
